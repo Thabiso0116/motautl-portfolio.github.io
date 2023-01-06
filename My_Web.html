@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="My_style.css">
+    <script src="https://kit.fontawesome.com/b732a93ed2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#reference">References</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>COMPUTER ENGINEER</p>
+            <h1>Hi, I'm <span>Thabiso Motau</span><br>From South Africa</h1>
+            <p>One Man. One Mission.<br>Can He Go Beyond?</p>
+        </div>
+    </div>
+</div>
+<!-- ---------------------------------------about me---------------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+                <div class="personal-info padd-15">
+                    <div class="row">
+                        <div class="info-item padd-15">
+                            <p>Birthday : <span>16 Jan 1999</span></p>
+                        </div>
+                        <div class="info-item padd-15">
+                            <p>Age : <span>24</span></p>
+                        </div>
+                        <div class="info-item padd-15">
+                            <p>Gender : <span>Male</span></p>
+                        </div>
+                        <div class="info-item padd-15">
+                            <p>Degree : <span>Computer Systems Engineering</span></p>
+                        </div>
+                        <div class="info-item padd-15">
+                            <p>Home Address : <span>165 Mmotwaneng, Mpudelle 1057</span></p>
+                        </div>
+                        <div class="info-item padd-15">
+                            <p>Current Address : <span> Pretoria</span></p>
+                        </div>
+                        <div class="info-item padd-15">
+                            <p>Freelance : <span>Available</span></p>
+                        </div>
+                        <div class="info-item padd-15">
+                            <p>happy Clients : <span>19+</span></p>
+                        </div>
+                        <div class="info-item padd-15">
+                            <p>Projects completed : <span>15+</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a Computer Systems Engineering gradute specializing in hardware and software. I excel at meeting 
+                deadlines, always exceeding expectaions and working with a wide variety of people.I belive this position 
+                is an excellent chance for me to showcase my unique skill set, Moreover I possess excellent leadership 
+                and problem solving strength.</p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('skill-rating')">Skill rating</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span> SQL</span></li>
+                    <li><span>C++ OOP</span></li>
+                    <li><span>Embarcadero C++</span></li>
+                    <li><span>Packet Tracer</span><br>Networking</li>
+                    <li><span>Web Design</span><br>Web app Development</li>
+                    <li><span>HTML</span><br></li>
+                    <li><span>CSS</span><br></li>
+                    <li><span>JavaScripts</span><br></li>
+                    <li><span>Electronics</span><br>Circuit builder </li>
+                    <li><span>PIC</span><br>Assembly language</li>
+                    <li><span>Java</span></li>
+                    <li><span>Altera & Raspberry Pi </span></li>
+                    <li><span>Robotics</span></li>
+                    <li><span>Computer Skills</span></li>
+                    <li><span>Linux</span></li>
+                    <li><span>Communication Skills</span><br> </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="skill-rating">
+                <ul>
+                    <div class="skill-item padd-15">
+                        <h5>SQL</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 95%;"></div>
+                            <div class="skill-percent">95%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                        <h5>C++ OOP</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 69%;"></div>
+                            <div class="skill-percent">69%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                        <h5>Embarcadero C++</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 82%;"></div>
+                            <div class="skill-percent">82%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                        <h5>Packet Tracer</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 86%;"></div>
+                            <div class="skill-percent">86%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                        <h5>Web Design</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 83%;"></div>
+                            <div class="skill-percent">83%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                        <h5>HTML</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 84%;"></div>
+                            <div class="skill-percent">84%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                        <h5>GitHub</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 62%;"></div>
+                            <div class="skill-percent">62%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                        <h5>CSS</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 79%;"></div>
+                            <div class="skill-percent">79%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                        <h5>JavaScript</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 71%;"></div>
+                            <div class="skill-percent">71%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                        <h5>Electronics</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 97%;"></div>
+                            <div class="skill-percent">97%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                        <h5>Linux</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 70%;"></div>
+                            <div class="skill-percent">70%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                        <h5>Altera & Raspberry Pi</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 68%;"></div>
+                            <div class="skill-percent">68%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                        <h5>Robotics</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 89%;"></div>
+                            <div class="skill-percent">89%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                        <h5>PIC simulator</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 60%;"></div>
+                            <div class="skill-percent">60%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                        <h5>Computer Skills</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 99%;"></div>
+                            <div class="skill-percent">99%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                        <h5>Communication Skills</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 75%;"></div>
+                            <div class="skill-percent">75%</div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Experience coming soon! </span></li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>TSHWANE UNIVERSITY OF TECHNOLOGY<br>2019 - 2022</span><br>studied N.Dip Computer Systems Engineering for 4 years.</li>
+                    <li><span>AM MASHEGO SECONDARY<br>SCHOOL<br>2012 - 2017</span><br>Obtained matric certificate major Mathematics and Science.</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------------------services----------------------------------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web design</h2>
+                <p>Create websites,code internet sites, web page and portfolio website using HTML, CSS & JavaScripts. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>Circuit Builder</h2>
+                <p>We create/build circuits boards using prescribed components for that specific project prescribed for it, using Breadboard/Veroboards. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-network-wired"></i>
+                <h2>Networking</h2>
+                <p>We do cload computing using netcad & CISCO packet tracer. This softwares allows users to simulate the configuration of CISCO routers and switches using a simulated command line interface</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-file"></i>
+                <h2>CV/Resume revamping</h2>
+                <p>We help create resume CV's and help modify CV if needed using our own revamping styles. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>C++ programmer</h2>
+                <p>Using Embarcadero & C++, we use this tools to helps IT teams and some other companies manage and optimize their Database, softwares App Development and infrastructure Performance</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-----------------------------Portfolio--------------------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/web-pic.png">
+                <div class="layer">
+                    <h3>Elevator</h3>
+                    <p>This is a website design, which i created using HTML, CSS and JavaScripts on Visual Studio Code IDE.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ARDIUNO & PROCESSING.png">
+                <div class="layer">
+                    <h3>Elevator</h3>
+                    <p>This a project made using ESP32, arduino IDE and Processing IDE. Which it's controlled by a circuit board and has a temperature sensor, that measures the temperature in the room.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/555.jpg">
+                <div class="layer">
+                    <h3>Elevator</h3>
+                    <p>This project done using Digital Systems and Electronics components. which are 555-timer and Counter</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/PLC.jpg">
+                <div class="layer">
+                    <h3>Elevator</h3>
+                    <p>Using PLC and some components, to create a FAN with an E-STOP.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Elevator</h3>
+                    <p>Using Processing and ESP32.This is a project that will be controlled using  processing interface to move the elevator from GROUND to LEVEL 3.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Security Sytem</h3>
+                    <p>Using Raspberry Pi. This project is used as a security sytem of a door where it keeps record of everyone attempting to enter the room, by taking a picture and more.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Water Dispancer</h3>
+                    <p>Using ESP32. This is an Auto-Manual device controlled by sensors and a bluetooth App.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#contact" class="btn">Hire me</a>
+    </div>
+</div>
+<!----------------------------------------Reference--------------------------------->
+<div id="reference">
+    <div class="container">
+        <h1 class="sub-title">References</h1>
+        <div class="reference-list">
+            <div>
+                <i class="fa-solid fa-asterisk"></i>
+                <h2>Mr Samuel Adebusola</h2>
+                <p>+27 63 036 9543<br>Lecture, Tshwane University Of Technology.  </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-asterisk"></i>
+                <h2>Mr Andy Mayingi</h2>
+                <p>+27 76 654 6590<br>Operating System Lecture, Tshwane University Of Technology. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-asterisk"></i>
+                <h2>Mr Malaka</h2>
+                <p>+27 82 228 2276<br>Principal, AM Mashego Secondary School. </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!---------------------------------------contact------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>thabisomjakhula@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>0826758855</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/message/76NSZKXLFANIJ1"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://twitter.com/MOTAUTHABISO1?t=LcowSISslRxapDvuQZcYvA&s=09"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/invites/contact/?i=1710njn7bojoj&utm_content=3a4hgic"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/motau-thabiso-22b2971bb"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href=""><i class=fab fa-facebook></i></a>
+                </div>
+                <a href="images/my cv.pdf" download class="btn btn2" >Download CV/Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="Text" name="Name" placeholder="Your Name" required>
+                    <input type="Email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2" >Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2023 Thabiso | Design by Thabiso <i class="fas fa-heart"></i> | All rights Reserved. </p>
+    </div>
+</div>
+<!--------------------------------------------------------------------------------------------------->
+<!----------------------------------Main & Body End-------------------------------------------------->
+
+<!----------------------------------Scripts Sections------------------------------------------------->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right= "0";
+    }
+    function closemenu(){
+        sidemeu.style.right= "-200px";
+    }
+
+</script>
+<!-----------------------------------------contact form sript-------------------------------------------------------------> 
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxTS-2C3zKfzwr7l8q2Gfk2VRhomDkMY99h01iDhfvLMj6X36k9ncj8baenrfxdpob-ew/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
